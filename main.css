@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo as fontes de todos os itens do header e o titulo de h2 */
+header,
+section h2,
+section h3,
+form button{
+    font-family:'Bungee', cursive;
+    font-weight: normal;
+}
+
+body, input, textarea {
+    font-family:'Roboto', sans-serif;
+}
+
+header{
+    padding: 20px 0;
+    background-color: #182c61;
+    color: #ecf0f1;
+}
+
+header nav li{
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+header nav li a{
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+/* Definimos a largura maxima que a pagina vai ter com o "max-width" 
+margin: 0 (topo e em baixo) auto (nas laterais)*/
+.container{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*Ajustando o Menu do site
+display: flex: colocando o link ao lado do titulo
+aling-items: center: alinhando o titulo com o link na vertical 
+justify-content: space-between: colocando os links do outro lado da pagina*/
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brands-list img{
+    height: 24px;
+}
+
+.brands-list li{
+    display: inline;
+    margin-right: 8px;
+}
+
+/* Colocando a apresentação da loja ao lado da imagem */
+section .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Definindo o espaçamento do menu pro conteúdo */
+section{
+    padding: 24px 0;
+}
+
+/* Criando uma margem no titulo do menu no site */
+section h2{
+    margin-bottom: 16px;
+}
+
+section{
+    color: #182c61;
+}
+
+/* Editando a margem do paragrafo */
+section p{
+    margin-bottom: 8px;
+}
+
+/* Aplicando uma margem na parte direita da imagem grande */
+.store-front{
+    margin-right: 32px;
+}
+
+.social-links img{
+    height: 24px;
+}
+
+.social-links li{
+    display: inline;
+    margin-right: 8px;
+}
+
+#contact .container{
+    display: block;
+}
+
+/* Arrumando as seções de contato
+display: flex : colocando uma ao lado da outra
+justify-content: space-between : aplicando o espaçamento ogual para todas as seções*/
+.contact-methods{
+    display: flex;
+    justify-content: space-between;
+}
+
+form input,
+form textarea,
+form button{
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+/* Tirando a possibilidade do usuario aumentar a caixa de texto */
+form textarea{
+    resize: none;
+    height: 180px;
+}
+
+section h3{
+    margin-bottom: 14px;
+}
+
+/* cursor: pointer: passando o mouse sobre o botão vai mudar a forma do cursor */
+form button{
+    background-color: #182c61;
+    color: #ecf0f1;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: #2f4a96;
+}
+
+/* Colocando borda ao redor do campo de escrever quando estiver digitando algo */
+input:focus, textarea:focus{
+    outline-color: #182c61;
+}
+
+footer{
+    background-color: #182c61;
+    color: #ecf0f1;
+    padding: 16px 0;
+}

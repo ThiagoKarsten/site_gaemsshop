@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Shop - A sua loja de games</title>
+
+    <link rel="stylesheet" href="main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Games Shop</h1>
+            <!-- Criando o menu atraves da tag "nav" -->
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#about">Sobre a loja</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="about">
+        <div class="container">
+            <img class="store-front" src="imagens/loja.jpg" alt="Fachada da loja Games Shop">
+            <div>
+                <h2>Sobre a loja</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente et accusamus doloremque velit iusto aliquid alias quia. Repudiandae itaque impedit sed aliquid velit! Placeat at, voluptatum sint eaque exercitationem dolor!
+                </p>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est culpa accusamus repellendus dicta neque nam corporis sequi commodi quis recusandae asperiores autem qui sit unde consectetur dolore rerum, illum quibusdam!
+                </p>
+                <ul class="brands-list">
+                        <li><img src="imagens/nintendo.png" alt="nintendo"></li>
+                        <li><img src="imagens/xbox.png" alt="xbox"></li>
+                        <li><img src="imagens/playstation.png" alt="playstation"></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2>Contato</h2>
+            <div class="contact-methods">
+                <div>
+                    <h3>Fale conosco</h3>
+                    <form>
+                        <!-- "required: obrigatorio o preeenchimento do campo" -->
+                        <input type="text" placeholder="Seu nome" required>
+                        <input type="email" placeholder="Seu email" required>
+                        <input type="tel" placeholder="Seu telefone (opcional)">
+                        <textarea placeholder="Sua mensagem" required></textarea>
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Limpar</button>
+                    </form>
+                </div>
+                <div>
+                    <h3>Nos acompannhe</h3>
+                    <ul class="social-links">
+                        <li>
+                            <a href="#" title="Siga-nos no instagram"> <img src="imagens/instagram.png" alt="Logo do Instagram"></a>
+                        </li>
+                        <li>
+                            <a href="#" title="Siga-nos no facebook"> <img src="imagens/facebook.png" alt="Logo do Facebook"></a>
+                        </li>
+                        <li>
+                            <a href="#" title="Visite nosso canal no Youtube"> <img src="imagens/youtube.png" alt="Logo do Youtube"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Venha até nós</h3>
+                    <p>
+                        Rua JavaScript nº 124, Vila HTML - São Paulo - SP
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <!-- Aplicando os direitos autorais do site -->
+            <p>
+                &copy; Games - Todos os direitos reservados - 2023
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
